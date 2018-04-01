@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!--绑定视图模型-->
+    <data>
+        <variable
+            name="viewModel"
+            type="mao.com.mybeatbox.viewmodel.SoundViewModel"/>
+    </data>
+
+    <!--声音布局文件  viewModel.title 语法糖 相当于viewModel.getTitle()-->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:text="@{viewModel.title}"
+        tools:text="Sound name"
+        />
+</layout>
