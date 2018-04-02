@@ -53,6 +53,11 @@ public class BeatBoxFragment extends Fragment{
         return binding.getRoot();
     }
 
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        mBeatBox.release();//释放资源
+    }
 
     private class SoundHolder extends RecyclerView.ViewHolder{
 
