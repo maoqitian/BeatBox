@@ -7,7 +7,7 @@ import mao.com.mybeatbox.model.BeatBox;
 import mao.com.mybeatbox.model.Sound;
 
 /**
- * Created by maoqi on 2018/4/1 0001.
+ * Created by maoqitian on 2018/4/1 0001.
  * 视图模型对象
  */
 

@@ -1,8 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 <FrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/fragment_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
 </FrameLayout>
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_height="60dp">
+        <TextView
+            android:id="@+id/play_control_title"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:textColor="#000"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"/>
+        <android.support.v7.widget.AppCompatSeekBar
+            android:id="@+id/seek_bar"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="56dp" />
+    </RelativeLayout>
+</RelativeLayout>
